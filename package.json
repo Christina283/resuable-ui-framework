@@ -1,0 +1,25 @@
+{
+  "name": "resuable-ui-framework",
+  "version": "0.1.0",
+  "description": "A starter reusable UI framework project for building shared components.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "framework",
+    "starter"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^7.1.1",
+    "@types/node": "^26.1.1",
+    "cypress": "^15.18.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
