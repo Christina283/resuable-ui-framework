@@ -1,24 +1,39 @@
 # Reusable UI Framework
 
-This repository is a starter template for a reusable UI framework project.
+Repository: Reusable UI automation starter using Cypress.
 
-## Structure
-
-- `src/` contains the framework source files.
-- `package.json` defines the package metadata and scripts.
-
-## Getting started
+- Clone the repository.
+- Install dependencies (explicit TypeScript version required):
 
 ```bash
-npm start
+npm install
+
 ```
 
-## Next steps
+- Run tests locally (headless):
 
-- Add your own components.
-- Create a component registry.
-- Publish the package to npm or GitHub Packages.
+```bash
+npm run test:e2e
+```
 
-## GitHub
+- Open Cypress runner (interactive):
 
-This project is ready to be published to GitHub and expanded into a real shared component library.
+```bash
+npm run cypress:open
+```
+
+Dependencies to ensure are present (from `devDependencies`):
+
+- cypress (v15+)
+- cypress-multi-reporters
+- mochawesome
+- mocha-junit-reporter
+- typescript@6.0.2 (explicitly required)
+
+Notes
+
+- This repo expects TypeScript `6.0.2`; installing a different TypeScript major version may cause type errors.
+- Test specs live under `tests/e2e/` and will be picked up by the Cypress config.
+- Fixtures are sourced from `framework/fixtures` per the project Cypress config.
+
+For full project documentation, folder layout, and CI instructions see `docs/README.md`.
